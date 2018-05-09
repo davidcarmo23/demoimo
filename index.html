@@ -133,7 +133,80 @@ function topFunction() {
     </div>
 		
 		<!-- Botão demo-->   <div>
-        <button id="myBtn2" title="Demo">Peça uma demo</button>
+        <button onclick="topfunction2()" id="myBtn2" title="Demo">Peça uma demo</button>
+                                                        
+        
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <p style="text-align: center; font-size: 40px">Gostaria de pedir uma demonstração?<br>Faça!</p>
+      <p style="font-size: 25px">Escolha o serviço que mais lhe agrada:</p>
+<select>
+  <option value="opcao1">Opção 1</option>
+  <option value="opcao2">Opção 2</option>
+  <option value="opcao3">Opção 3</option>
+  <option value="opcao4">Opção 4</option>
+</select>
+      <br><br>
+      <div>
+					<div class="form-group ">
+						<label for="name" class="sr-only">Nome</label>
+						<input id="name" class="form-control" placeholder="Nome" type="text">
+					</div>
+					<div class="form-group ">
+						<label for="email" class="sr-only">Email</label>
+						<input id="email" class="form-control" placeholder="Email" type="email">
+					</div>
+					<div class="form-group ">
+						<label for="phone" class="sr-only">Telemóvel</label>
+						<input id="phone" class="form-control" placeholder="Telemóvel" type="text">
+					</div>
+					<div class="form-group ">
+						<label for="message" class="sr-only">Mensagem</label>
+						<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Mensagem"></textarea>
+					</div>
+					<div class="form-group " style="text-align: center">
+						<input class="btn btn-primary btn-lg" value="Enviar" type="submit">
+					</div>
+      </div>
+      
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>        
+        
+        
     </div>
 
 	<section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
